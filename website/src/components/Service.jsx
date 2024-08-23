@@ -19,5 +19,3 @@ const Service = forwardRef(({ index, title, subtitle, text, img }, ref) => (
 ));
 
 export default Service;
-
-// hi

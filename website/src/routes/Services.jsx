@@ -29,7 +29,7 @@ function Services() {
       <Title img1={getImageURL(serviceTitle[0].img1, "ServiceImages")} img2={getImageURL(serviceTitle[0].img2, "ServiceImages")} title={serviceTitle[0].title} subtitle={serviceTitle[0].subtitle} text={serviceTitle[0].text} />
       <div>
         {servicesInfo.map((service, index) => (
-          <Service key={index} index={index} ref={refs[index]} title={service.title} subtitle={service.subtitle} text={service.text} img={getImageURL(servicesInfo[0].img, "ServiceImages")} />
+          <Service key={index} index={index} ref={refs[index]} title={service.title} subtitle={service.subtitle} text={service.text} img={getImageURL(service.img, "ServiceImages")} />
         ))}
       </div>
     </>

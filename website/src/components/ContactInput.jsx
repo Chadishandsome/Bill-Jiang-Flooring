@@ -7,6 +7,7 @@ function ContactInput() {
     document.querySelectorAll(".contactinput-input input, .contactinput-input textarea").forEach(input => {input.value = "";});
     alert("Thank you for submitting your message. A staff member will review it shortly")
   }
+  
 
   return (
     <div className='contactinput'>

@@ -2,38 +2,145 @@
 
 .products {
   background-color: rgb(238, 238, 238);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.products-container {
   display: grid;
   margin: 0;
   padding: 2rem;
   gap: 0.5rem;
 }
 
+.products h1{
+  font-size: 2.5rem;
+  padding-top: 2rem;
+  align-self: center;
+}
+
+.products button {
+  width: 30%;
+  align-self: center;
+  color: black;
+  border: solid 3px black;;
+  padding: 1rem;
+  font-size: large;
+  font-weight: 600;
+  font-family: "Lexend Deca", sans-serif;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.4);
+}
+
+.products button:hover {
+  color: white;
+  background-color: black;
+  border: solid 3px black;
+  box-shadow: 0 4.5px 6px 0 rgba(0, 0, 0, 0.6);
+}
+
 /* Product */
 
 .product {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
   margin: 0;
-  background-size: cover;
   border-radius: 3px;
-  height: 25vw;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  height: 25vw;
 }
 
 .product:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
 
-.product-container {
-  display: flex;
-  justify-content: center;
-}
-
-.product-container h2{
+.product-image {
   margin: 0;
-  color: white;
+  height: 100%;
+  background-size: cover;
 }
 
-/* Responsive design and others */
+.product-title-container {
+  position: absolute;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.product-title-container h2{
+  font-size: small;
+  margin: 0;
+  color: black;
+}
+
+/* Responsive design and different pages */
 
 .hidden {
   display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .products-container {
+    padding: 1rem;
+  }
+
+  .products h1{
+    font-size: xx-large;
+  }
+
+  .product-title-container h2{
+    font-size: x-small;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .products h1{
+    font-size: x-large;
+  }
+
+  .products button {
+    width: 40%;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .product-title-container {
+    padding: 0.4rem 0.75rem;
+    margin-left: 1rem;
+    margin-top: 0.75rem;
+  }
+
+  .product-title-container h2{
+    font-size: x-small;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .products button {
+    width: 40%;
+    font-size: medium;
+    border-radius: 8px;
+  }
+
+  .products h1{
+    font-size: larger;
+  }
+
+  .product {
+    height: 40vw;
+  }
+  
+  .product-title-container {
+    margin: 0;
+    position: static;
+  }
+
+  .product-title-container h2{
+    font-size: xx-small;
+  }
 }

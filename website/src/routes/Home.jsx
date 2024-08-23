@@ -17,7 +17,7 @@ function Home() {
       <Hero/>
       <Cards/>
       <About ref={aboutRef}/>
-      <Product length={6} isHome={true} perRow={2}/>
+      <Product length={4} isHome={true} perRow={2}/>
       <Testimonials/>
     </>
   )
