@@ -1,0 +1,137 @@
+.navbar {
+  /* position: sticky;
+  top: 0; */
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: column; /* Stack the items vertically */
+  width: 100%;
+}
+
+.navbar-logo-address-phonenumber-container {
+  display: flex;
+}
+
+.navbar-logo-container {
+  display: flex;
+  justify-content: center; /* Center the logo horizontally */
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-logo {
+  height: 7rem;
+  width: 7rem;
+}
+
+.navbar-lines {
+  margin: 0;
+  border-top: 0.05rem solid black;
+}
+
+.navbar-links-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.navbar-links {
+  display: flex;
+  margin: 0;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  padding: 0.85rem 1rem;
+  align-self: center;
+  letter-spacing: 0.05em;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  color: black;
+}
+
+.navbar-links a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(183, 135, 83, 0.85);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.address-phonenumber {
+  align-self: center;
+}
+
+.address-phonenumber p {
+  display: flex;
+  margin: 0.25rem;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Responsive design */
+.address-phonenumber.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 844px) {
+  .address-phonenumber.desktop {
+    display: none;
+  }
+
+  .address-phonenumber.mobile {
+    display: block;
+  }
+
+  .navbar-links-container {
+    justify-content: center;
+  }
+
+  .navbar-logo-container {
+    justify-content: flex-start;
+  }
+
+  .navbar-links {
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0.5rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-links a {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 593px) {
+  .navbar-links-container {
+    margin: 0 0.5rem;
+  }
+  .navbar-links a {
+    padding: 0 0.3rem;
+    font-size: x-small;
+  }
+
+  .address-phonenumber p {
+    padding: 0 0.3rem;
+    font-size: small;
+  }
+
+  .navbar-logo {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .navbar-links a {
+    padding: 0 0.1rem;
+    font-size: xx-small;
+  }
+}

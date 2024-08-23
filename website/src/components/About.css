@@ -1,0 +1,64 @@
+.about {
+  background-color: rgb(27, 27, 27);
+  padding: 8rem 10rem;
+}
+
+.about-container {
+  margin: 0;
+  padding: 0;
+}
+
+.about-text-container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.about-text-container h1{
+  margin: 0;
+  margin-bottom: 2rem;
+  align-self: center;
+}
+
+.about-text-container p{
+  margin: 0 2rem;
+  align-self: center;
+  line-height: 135%;
+  font-size: 1.15rem;
+}
+
+@media screen and (max-width: 960px) {
+  .about {
+    padding: 8rem 4rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .about {
+    padding: 6rem 4rem;
+  }
+
+  .about-text-container h1{
+    font-size: 1.75rem;
+  }
+
+  .about-text-container p{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .about {
+    padding: 6rem 2rem;
+  }
+
+  .about-text-container h1{
+    font-size: 1.65rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-text-container p{
+    font-size: 0.9rem;
+    margin: 0 1rem;
+  }
+}
