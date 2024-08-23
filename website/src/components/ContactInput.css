@@ -1,0 +1,108 @@
+.contactinput {
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem;
+}
+
+.contactinput-container {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.contactinput-image {
+  flex-basis: 30%;
+  width: 100%;
+  height: auto;
+  background-image: url(../assets/ContactImages/image.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.contactinput-input {
+  flex-basis: 70%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+}
+
+.contactinput-input-div{
+  display: flex;
+  justify-content: stretch;
+}
+
+.contactinput-input-div input, .contactinput-input-div textarea{
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+  background: none;
+  font-size: medium;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.submit-button button{
+  background-color: white;
+  padding: 1rem 2rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: medium;
+  font-family: "Lexend Deca", sans-serif;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button button:hover{
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width: 650px) {
+  .contactinput {
+    padding: 8rem 4rem;
+  }
+
+  .contactinput-image {
+    display: none;
+  }
+
+  .contactinput-input {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contactinput-input-div input, .contactinput-input-div textarea{
+    margin-bottom: 1.5rem;
+    padding: 1rem 1rem;
+    font-size: smaller;
+  }
+
+  .submit-button button{
+    padding: 0.5rem 1rem;
+    font-size: smaller;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .contactinput {
+    padding: 6rem 0;
+    border-radius: 0;
+  }
+}
