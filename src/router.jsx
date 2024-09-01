@@ -19,7 +19,7 @@ const productRoutes = productsInfo.map((product) => ({
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/Bill-Jiang-Flooring',
     element: <App />,
     children: [
       {
