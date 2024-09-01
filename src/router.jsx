@@ -19,7 +19,7 @@ const productRoutes = productsInfo.map((product) => ({
 
 const router = createBrowserRouter([
   {
-    path: '/Bill-Jiang-Flooring',
+    path: '/',
     element: <App />,
     children: [
       {
@@ -55,6 +55,10 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+],
+{
+  basename: "/Bill-Jiang-Flooring",
+},
+);
 
 export default router;
