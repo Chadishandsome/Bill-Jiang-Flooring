@@ -10,7 +10,7 @@ import Gallery from './routes/Gallery.jsx'
 import Contact from './routes/Contact.jsx'
 import NotFoundPage from './routes/NotFoundPage.jsx'
 
-import { createBrowserRouter, useLocation } from 'react-router-dom'
+import { createBrowserRouter } from 'react-router-dom'
 
 const productRoutes = productsInfo.map((product) => ({
   path: product.path,
