@@ -27,7 +27,7 @@ function Navbar() {
             <div className='phonenumber'>
               {/* <img className='phone-icon' src="" alt="" /> */}
               <p>
-                (613) 680-2289
+                (123) 456-7890
               </p>
             </div>
           </div>
